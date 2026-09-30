@@ -12,10 +12,13 @@ export const profile = {
   phone: "+250 796 226 099",
   phoneLink: "+250796226099",
   photo: "", // put your photo in public/ (e.g. public/me.jpg) and write '/me.jpg' here
-  resume: "", // put your CV in public/ (e.g. public/Baudoin_Bolingo_CV.pdf) and write its path here
+  resume: "/Baudoin_Bolingo_CV.pdf",
   socials: [
-    { label: "Instagram", href: "https://www.instagram.com/your-username" }, // put your real links
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/your-username" },
+    { label: "Instagram", href: "https://www.instagram.com/baudoin_10/" },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/baudoin-bolingo-b19229221",
+    },
   ],
 };
 
@@ -214,23 +217,23 @@ export const skills = [
 
 export const principles = [
   {
-    title: "Users Come First.",
-    text: "A feature is only done when people understand it and enjoy using it.",
+    title: "Built For Real People.",
+    text: "Murakoze is used by banks, hospitals and hotels across Rwanda. I build for the person at the counter, not just the demo.",
   },
   {
-    title: "Work Closely With Clients.",
-    text: "I share progress early and often, so what I build matches what you need.",
+    title: "One Product, Every Screen.",
+    text: "Most of my work runs on web and mobile at once, so I keep features, data and design consistent on both.",
   },
   {
-    title: "Build To Scale.",
-    text: "I write clean, organized code that is easy to grow and easy to hand over.",
+    title: "Make Complex Data Clear.",
+    text: "From farm alerts to customer ratings, I turn raw data into dashboards people can read and act on in seconds.",
   },
   {
-    title: "Test Beyond The Happy Path.",
-    text: "I check errors, slow networks and edge cases before anything goes live.",
+    title: "Use AI Where It Helps.",
+    text: "I run models like Gemma 4 through Ollama and Groq for tasks like zero-shot classification, only where it saves real work.",
   },
   {
-    title: "Keep Learning.",
-    text: "I pick up new tools fast, from Angular to AI, and use what fits the project.",
+    title: "Design To Code, Faithfully.",
+    text: "I work side by side with designers and senior developers so the final app matches the design and scales with the team.",
   },
 ];
