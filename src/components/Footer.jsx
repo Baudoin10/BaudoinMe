@@ -5,12 +5,12 @@ import { navLinks, profile } from "../data";
 const footerSocials = [
   {
     label: "Instagram",
-    href: "https://www.instagram.com/your-username",
+    href: "https://www.instagram.com/baudoin_10/",
     icon: FaInstagram,
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/your-username",
+    href: "https://www.linkedin.com/in/baudoin-bolingo-b19229221",
     icon: FaLinkedin,
   },
 ];
