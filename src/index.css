@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* Your colors and fonts. Change them here and the whole site updates. */
+@theme {
+  --color-paper: #F4F6FB;
+  --color-rule: #E3E8F2;
+  --color-ink: #14213D;
+  --color-muted: #5B6478;
+  --color-card: #E7EEF9;
+  --color-teal: #0E7C7B;
+  --color-deep: #0B3B4A;
+  --color-tangerine: #FF8A3D;
+  --color-peach: #FFE2CC;
+
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-hand: "Caveat", "Comic Sans MS", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+/* Lined notebook paper background */
+body {
+  background-color: var(--color-paper);
+  background-image: repeating-linear-gradient(to bottom, transparent 0 35px, var(--color-rule) 35px 36px);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Hand-drawn orange underline. Use: className="stroke" */
+.stroke {
+  position: relative;
+  display: inline-block;
+}
+.stroke::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -6px;
+  bottom: -12px;
+  height: 12px;
+  background: no-repeat center / 100% 100%
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 14' preserveAspectRatio='none'%3E%3Cpath d='M3 8 C 50 2, 110 3, 177 7' fill='none' stroke='%23FF8A3D' stroke-width='4.5' stroke-linecap='round'/%3E%3Cpath d='M14 12 C 60 9, 120 9, 168 11' fill='none' stroke='%23FF8A3D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* Two strips of tape on a button. Use: className="tape" */
+.tape {
+  position: relative;
+}
+.tape::before,
+.tape::after {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 14px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--color-tangerine) 70%, transparent);
+  transform: rotate(-38deg);
+  pointer-events: none;
+}
+.tape::before { top: -6px; left: -12px; }
+.tape::after { bottom: -6px; right: -12px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
