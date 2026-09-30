@@ -74,6 +74,7 @@ export const projects = [
       'A Rwandan customer experience platform. Banks, hospitals, hotels and restaurants use it to track client satisfaction in real time, manage queues and schedule appointments.',
     role: 'Software Developer',
     image: 'projects/murakoze.png',
+        mobileImage: 'projects/screen.png',
     tags: ['React js', 'TypeScript', 'React Native', 'Angular', 'PostgreSQL', 'Yii2', 'PHP'],
     github: '', // add your repo link
     live: '', // add your live demo link
