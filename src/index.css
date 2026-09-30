@@ -2,13 +2,19 @@
 
 /* Your colors and fonts. Change them here and the whole site updates. */
 @theme {
-  --color-paper: #F4F6FB;
-  --color-rule: #E3E8F2;
-  --color-ink: #14213D;
-  --color-muted: #5B6478;
-  --color-card: #E7EEF9;
-  --color-teal: #0E7C7B;
+  /* Background: warm cream notebook paper */
+  --color-paper: #FEFAE9;
+  --color-rule: #EFE6C8;
+  --color-card: #F4EFD9;
+  --color-edge: #E3D7B4;
+
+  /* Text */
+  --color-ink: #1B2233;
+  --color-muted: #5F5B52;
+
+  /* Brand */
   --color-deep: #0B3B4A;
+  --color-teal: #0E7C7B;
   --color-tangerine: #FF8A3D;
   --color-peach: #FFE2CC;
 
@@ -16,7 +22,6 @@
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-hand: "Caveat", "Comic Sans MS", cursive;
 }
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
