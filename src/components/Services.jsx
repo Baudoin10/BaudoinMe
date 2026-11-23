@@ -11,23 +11,23 @@ export default function Services() {
         {services.map((service, index) => (
           <li
             key={service.title}
-            className={`relative flex flex-col gap-5 rounded-2xl bg-white p-8 shadow-[0_18px_40px_-26px_rgba(20,33,61,0.5)] ${
+            className={`relative flex flex-col gap-5 rounded-2xl bg-white p-8 shadow-[0_18px_40px_-26px_rgba(20,33,61,0.5)] dark:bg-card ${
               index === 0 ? 'lg:-rotate-1' : index === 2 ? 'lg:rotate-1' : ''
             }`}
           >
             {service.tag && (
-              <span className="absolute -top-4 right-5 rotate-3 rounded-lg border-2 border-dashed border-teal bg-peach px-3 font-hand text-xl text-deep">
+              <span className="absolute -top-4 right-5 rotate-3 rounded-lg border-2 border-dashed border-teal bg-peach px-3 font-hand text-xl text-[#0B3B4A]">
                 {service.tag}
               </span>
             )}
             <span className="font-hand text-2xl text-teal">{String(index + 1).padStart(2, '0')}</span>
             <h3 className="font-display text-3xl font-bold text-ink">{service.title}</h3>
             <p className="text-[15px] leading-relaxed text-muted">{service.for}</p>
-            <hr className="border-t-2 border-dashed border-rule" />
+            <hr className="border-t-2 border-dashed border-rule dark:border-edge" />
             <ul className="space-y-3">
               {service.items.map((item) => (
-                <li key={item} className="flex gap-3 text-[15px] font-medium">
-                  <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-tangerine text-xs font-bold text-deep">
+                <li key={item} className="flex gap-3 text-[15px] font-medium text-ink">
+                  <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-tangerine text-xs font-bold text-[#0B3B4A]">
                     ✓
                   </span>
                   {item}

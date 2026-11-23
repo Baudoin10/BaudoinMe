@@ -13,14 +13,16 @@ export default function Principles() {
         {principles.map((item, index) => (
           <li
             key={item.title}
-            className={`grid content-start gap-3 rounded-2xl bg-white p-7 shadow-[0_14px_30px_-22px_rgba(20,33,61,0.5)] lg:col-span-2 ${
+            className={`grid content-start gap-3 rounded-2xl bg-white p-7 shadow-[0_14px_30px_-22px_rgba(20,33,61,0.5)] dark:bg-card lg:col-span-2 ${
               index === 3 ? "lg:col-start-2" : ""
             }`}
           >
             <span className="font-display text-lg font-bold text-teal">
               {String(index + 1).padStart(2, "0")}
             </span>
-            <h3 className="font-display text-xl font-bold">{item.title}</h3>
+            <h3 className="font-display text-xl font-bold text-ink">
+              {item.title}
+            </h3>
             <p className="text-[15px] leading-relaxed text-muted">
               {item.text}
             </p>

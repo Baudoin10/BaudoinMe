@@ -13,7 +13,10 @@ export default function Skills() {
             <h3 className="font-display text-2xl font-bold">{skill.group}</h3>
             <div className="flex flex-wrap gap-2">
               {skill.items.map((item) => (
-                <span key={item} className="rounded-lg bg-white px-3 py-1 text-sm font-medium shadow-[0_2px_0_#C9D3E6]">
+                <span
+                  key={item}
+                  className="rounded-lg bg-white px-3 py-1 text-sm font-medium text-[#1B2233] shadow-[0_2px_0_#C9D3E6] dark:bg-edge dark:text-ink dark:shadow-[0_2px_0_#0b1117]"
+                >
                   {item}
                 </span>
               ))}

@@ -25,17 +25,17 @@
 }
 
 .dark {
-  --color-paper: #12181f;
-  --color-rule: #1b242d;
-  --color-card: #1a222b;
-  --color-edge: #2a3540;
+  --color-paper: #101820;
+  --color-rule: #18222c;
+  --color-card: #182430;
+  --color-edge: #2a3a48;
 
-  --color-ink: #f1ead8;
-  --color-muted: #a9a595;
+  --color-ink: #f3ecda;
+  --color-muted: #aaa89c;
 
-  --color-deep: #e8f1f2;
+  --color-deep: #2f8fa8;
   --color-teal: #3fc4c2;
-  --color-peach: #1d3a44;
+  /* tangerine and peach stay the same */
 }
 
 html {
