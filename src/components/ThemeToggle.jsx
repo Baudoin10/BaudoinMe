@@ -15,7 +15,7 @@ export default function ThemeToggle() {
       type="button"
       onClick={() => setDark(!dark)}
       aria-label="Toggle dark mode"
-      className="grid h-10 w-10 place-items-center rounded-full border-2 border-deep text-deep transition hover:bg-deep hover:text-paper"
+      className="grid h-10 w-10 cursor-pointer place-items-center rounded-full border-2 border-deep text-deep transition hover:bg-deep hover:text-paper"
     >
       {dark ? (
         // Sun icon
