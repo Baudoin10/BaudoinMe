@@ -1,7 +1,6 @@
 import { profile } from "../data";
 import Button from "./Button";
 
-// Change this to any emoji you like
 const HERO_EMOJI = "👨🏾‍💻";
 
 export default function Hero() {

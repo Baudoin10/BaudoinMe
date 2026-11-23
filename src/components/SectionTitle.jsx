@@ -1,4 +1,4 @@
-// Reusable heading used at the top of every section.
+
 export default function SectionTitle({ title, subtitle, light = false }) {
   return (
     <div className="mb-12 grid gap-7 md:mb-16">

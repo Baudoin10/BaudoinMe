@@ -76,7 +76,7 @@ export default function Projects() {
                 }`}
               />
 
-              {/* Phone screenshot, only shown if the project has mobileImage */}
+            
               {project.mobileImage && (
                 <div className="absolute bottom-0 right-0 z-20 w-[32%] min-w-[110px] max-w-[180px] rotate-3 rounded-[26px] bg-ink p-1.5 shadow-2xl">
                   <span className="absolute left-1/2 top-2.5 z-10 h-1.5 w-10 -translate-x-1/2 rounded-full bg-ink" />

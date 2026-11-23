@@ -6,7 +6,6 @@ import ThemeToggle from "./ThemeToggle";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  // Stop the page from scrolling behind the open menu
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
