@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* Your colors and fonts. Change them here and the whole site updates. */
 @theme {
