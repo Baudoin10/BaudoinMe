@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { navLinks, profile } from "../data";
 import Button from "./Button";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -38,20 +39,25 @@ export default function Navbar() {
             </ul>
           </nav>
 
-          <div className="hidden md:block">
+          {/* Desktop: toggle + Hire Me */}
+          <div className="hidden items-center gap-4 md:flex">
+            <ThemeToggle />
             <Button href="#contact">Hire Me</Button>
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            type="button"
-            onClick={() => setOpen(true)}
-            aria-label="Open menu"
-            className="flex flex-col gap-1.5 p-2 md:hidden"
-          >
-            <span className="block h-[3px] w-8 rounded bg-deep" />
-            <span className="block h-[3px] w-5 rounded bg-deep" />
-          </button>
+          {/* Mobile: toggle + menu button */}
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
+            <button
+              type="button"
+              onClick={() => setOpen(true)}
+              aria-label="Open menu"
+              className="flex flex-col gap-1.5 p-2"
+            >
+              <span className="block h-[3px] w-8 rounded bg-deep" />
+              <span className="block h-[3px] w-5 rounded bg-deep" />
+            </button>
+          </div>
         </div>
       </header>
 
@@ -86,7 +92,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="tape mt-2 inline-flex h-10 items-center rounded-xl bg-tangerine px-5 font-display text-sm font-semibold text-deep"
+            className="tape mt-2 inline-flex h-10 items-center rounded-xl bg-tangerine px-5 font-display text-sm font-semibold text-[#0B3B4A]"
           >
             Hire Me
           </a>

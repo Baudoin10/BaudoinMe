@@ -23,6 +23,21 @@
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-hand: "Caveat", "Comic Sans MS", cursive;
 }
+
+.dark {
+  --color-paper: #12181f;
+  --color-rule: #1b242d;
+  --color-card: #1a222b;
+  --color-edge: #2a3540;
+
+  --color-ink: #f1ead8;
+  --color-muted: #a9a595;
+
+  --color-deep: #e8f1f2;
+  --color-teal: #3fc4c2;
+  --color-peach: #1d3a44;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
