@@ -177,7 +177,7 @@ export const services = [
 export const skills = [
   {
     group: "Mobile",
-    items: ["React Native", "Expo", "Redux Toolkit", "Appwrite"],
+    items: ["React Native", "Expo", "Redux Toolkit"],
   },
   {
     group: "Frontend",
