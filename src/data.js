@@ -1,5 +1,3 @@
-// All the text on your site lives here.
-// Edit this file to update your portfolio. You don't need to touch the components.
 
 export const profile = {
   name: "Baudoin Bolingo",
@@ -11,7 +9,7 @@ export const profile = {
   email: "baudouinbolingo@gmail.com",
   phone: "+250 796 226 099",
   phoneLink: "+250796226099",
-  photo: "", // put your photo in public/ (e.g. public/me.jpg) and write '/me.jpg' here
+  photo: "",
   resume: "/Baudoin_Bolingo_CV.pdf",
   socials: [
     { label: "Instagram", href: "https://www.instagram.com/baudoin_10/" },
